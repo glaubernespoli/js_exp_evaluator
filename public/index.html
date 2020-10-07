@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JS Expression Evaluator</title>
+
+		<!-- Font Awesome -->
+		<link href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" rel="stylesheet" />
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+		<!-- MDB -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/1.2.0/mdb.min.css" rel="stylesheet" />
+
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+
+	<body class="bg-dark">
+		<div class="container-sm mt-5">
+			<div class="row">
+				<div class="bg-gray-900 text-light">
+					<div class="card-body text-center align-items-center">
+						<h1>JS Expression Evaluator</h1>
+						<div class="input-group col-6 mb-3 d-flex justify-content-center">
+							<div class="form-outline form-white col-8">
+								<input
+									type="text"
+									id="expression"
+									class="form-control text-light"
+									aria-describedby="text-expression"
+								/>
+								<label class="form-label text-white-50" for="expression">Enter Expression Here</label>
+							</div>
+							<div class="input-group-append">
+								<button class="btn btn-outline-light" type="button" id="button-eval">
+									<i class="fas fa-angle-double-right"></i>
+									Evaluate
+								</button>
+							</div>
+							<div class="col-auto">
+								<span id="text-expression" class="form-text">
+									Enter a valid expression like:
+									<span class="text-white-50 bold"
+										>true && (false || (true && true) && false || (true && false) && true) && true
+										|| (true && false)</span
+									>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/1.2.0/mdb.min.js"></script>
+		<script src="http://xregexp.com/v/3.2.0/xregexp-all.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
